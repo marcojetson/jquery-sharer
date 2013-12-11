@@ -1,6 +1,6 @@
 # jquery-sharer
 
-Social share buttons plugin for jQuery
+Social share buttons plugin for jQuery, supports Facebook, Twitter, LinkedIn, Tumblr, Google+, reddit, Pinterest, StumbleUpon and Taringa!
 
 ## Installation
 
@@ -45,7 +45,7 @@ An array containing enabled networks
 Base object for buttons
 
 ```javascript
-"template":  $(<a class="sharer-icon" />)
+"template":  $("<a class="sharer-icon" />")
 ```
 
 ### class
