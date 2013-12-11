@@ -108,6 +108,10 @@ Override global defaults using `$.sharer.options` object
 $.sharer.options["label"] = "Compartir en %network.id%";
 ```
 
+## Demo
+
+http://marcojetson.github.io/jquery-sharer/
+
 ## Credits
 
 - Minimal Social Media Icons by [softarea](http://www.softarea.in)
