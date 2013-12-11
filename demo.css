@@ -1,0 +1,9 @@
+#sharer-bottom {
+	position: fixed;
+	bottom: 10px;
+	left: 10px;
+}
+
+#sharer-bottom .sharer-icon {
+	margin-right: 10px;
+}
