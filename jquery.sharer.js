@@ -8,7 +8,7 @@ $.sharer = {
 		},
 		"twitter": {
 			"name": "Twitter",
-			"url": "https://twitter.com/share?url=%url%&text=%description%"
+			"url": "https://twitter.com/share?url=%url%&text=%title%+%description%"
 		},
 		"linkedin": {
 			"name": "LinkedIn",
@@ -28,7 +28,7 @@ $.sharer = {
 		},
 		"pinterest": {
 			"name": "Pinterest",
-			"url": "http://pinterest.com/pin/create/button/?url=%url%&media=&description=%description%"
+			"url": "http://pinterest.com/pin/create/button/?url=%url%&media=&description=%title%+%description%"
 		},
 		"stumbleupon": {
 			"name": "StumbleUpon",
@@ -36,7 +36,7 @@ $.sharer = {
 		},
 		"taringa": {
 			"name": "Taringa!",
-			"url": "http://www.taringa.net/widgets/share.php?url=%url%&body=%title%"
+			"url": "http://www.taringa.net/widgets/share.php?url=%url%&body=%title%+%description%"
 		}
 	},
 	"options": {
