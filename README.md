@@ -6,21 +6,29 @@ Social share buttons plugin for jQuery
 
 Include stylesheet in your document's `<head>`
 
-    <link rel="stylesheet" src="jquery.sharer.css">
+```html
+<link rel="stylesheet" src="jquery.sharer.css">
+```
 
 Include script after jQuery library
 
-    <script src="jquery.sharer.js"></script>
+```html
+<script src="jquery.sharer.js"></script>
+```
 
 ## Usage
 
 Add a container element
 
-    <div id="sharer-container"></div>
+```html
+<div id="sharer-container"></div>
+```
 
 Initialise
 
-    <script type="text/javascript">$("#sharer-container").sharer()</script>
+```html
+<script type="text/javascript">$("#sharer-container").sharer()</script>
+```
 
 ## Options
 
@@ -28,41 +36,79 @@ Initialise
 
 An array containing enabled networks
 
-    "networks": ["facebook", "twitter", "linkedin", "tumblr", "googleplus", "reddit", "pinterest", "stumbleupon", "taringa"]
+```javascript
+"networks": ["facebook", "twitter", "linkedin", "tumblr", "googleplus", "reddit", "pinterest", "stumbleupon", "taringa"]
+```
 
 ### template
 
 Base object for buttons
 
-    "template":  $(<a class="sharer-icon" />)
+```javascript
+"template":  $(<a class="sharer-icon" />)
+```
 
 ### class
 
 Class added to buttons
 
-    "class": "sharer-icon-%network.id%"
+```javascript
+"class": "sharer-icon-%network.id%"
+```
 
 ### label
 
 Button title
 
-    "label": "Share on %network.name%"
+```javascript
+"label": "Share on %network.name%"
+```
 
 ### title
 
 Share title. Defaults to current title
 
-    "title": null
+```javascript
+"title": null
+```
 
 
 ### description
 
 Share description. Defaults to document's meta description
 
-    "description": null
+```javascript
+"description": null
+```
 
 ### url
 
 Share URL. Defaults to current location
 
-    "url": null
+```javascript
+"url": null
+```
+
+## Networks
+
+Add, or modify, a network using `$.sharer.networks` object
+
+```javascript
+$.sharer.networks["yet-another-social-network"] = {
+    "name": "Yet Another Social Network",
+    "url": "http://www.yetanothersocialnetwork.com/share?url=%url%" // also %title% and %description% are available
+};
+```
+
+## Overriding global defaults
+
+Override global defaults using `$.sharer.options` object
+
+```javascript
+$.sharer.options["label"] = "Compartir en %network.id%";
+```
+
+## Credits
+
+- Minimal Social Media Icons by [softarea](http://www.softarea.in)
+- Heavily inspired in [jquery-share](https://github.com/iatek/jquery-share)
