@@ -45,7 +45,7 @@ An array containing enabled networks
 Base object for buttons
 
 ```javascript
-"template":  $("<a class="sharer-icon" />")
+"template":  $('<a class="sharer-icon" />')
 ```
 
 ### class
